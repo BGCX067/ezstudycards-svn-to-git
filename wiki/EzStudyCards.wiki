@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+EzStudyCards is a project created by team of 5 students in UTA Cse5328 Spring 2012 class. The project is to create a simple, user friendly Android app that lets users to create study cards, and review them easily.
+
+The team members are
+ * Sudhir Chhetri
+ * Gautham Shivashankara
+ * Ninad Malvankar
+ * Yan Ma
+ * Sathish Kumar Kuppusamy

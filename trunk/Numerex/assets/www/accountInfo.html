@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta name="viewport" content="user-scalable=no, width=devicewidth" />	 
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script src="js/jquery-1.6.4.min.js"></script>	
+	<script src="js/jquery.mobile-1.0.min.js"></script>
+	<script src="js/accountProxy.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/configuration.js"></script>
+	<script src="js/notification.js"></script>
+	<script src="js/statusbarnotification.js"></script>
+		
+	<script type="text/javascript">
+		$(document).ready(function(){
+			loadAccountInfo();		   		   	
+		});	
+	</script>
+</head>
+<body>
+
+<div data-role="page">
+	<div data-role="header">		
+		<h1>My Account</h1>
+		<a onClick="logOutUser()" class="ui-btn-right" >Logout</a>
+	</div><!-- /header -->
+
+	<div data-role="content" style="text-align:left; padding: 10px;">
+	<b>Tracking# :</b>  <span id="trackingNum"></span> <br/><br/>
+	<b>Unit Name :</b> <span id="unitName"> </span> <br/><br/>
+	<b>Unit Serial # :</b> <span id="unitSerialNum" ></span> <br/><br/>
+	<b>Customer Name :</b> <span id="customerName" ></span> <br/><br/>
+	<b>Address :</b> <span id="address"></span> <br/><br/>
+	<b>Phone :</b> <span id="phone"></span><br/><br/>
+	<b>Email :</b> <span id="email"></span><br/><br/>
+	<b>TimeZone :</b> <span id="timezone"></span><br/>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" >
+		<div data-role="navbar">
+			<ul>
+				<li><a href="javascript:redirect('security.html');">Status</a></li>
+				<li><a href="javascript:redirect('history.html');">Events</a></li>
+				<li><a href="#" class="ui-btn-active">My Account</a></li>				
+			</ul>
+		</div>	
+	</div>
+</div>
+		
+
+</body>
+</html>

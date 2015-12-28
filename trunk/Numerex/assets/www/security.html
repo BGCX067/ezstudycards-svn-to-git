@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta name="viewport" content="user-scalable=no, width=devicewidth" />	 
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script src="js/jquery-1.6.4.min.js"></script>	
+	<script src="js/jquery.mobile-1.0.min.js"></script>
+	<script src="js/securityPanelProxy.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/configuration.js"></script>
+	<script src="js/notification.js"></script>
+	<script src="js/statusbarnotification.js"></script>	
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Current Status</h1>
+		<a onClick="logOutUser()" class="ui-btn-right" >Logout</a>
+	</div><!-- /header -->
+<br/><br/>
+	<div data-role="content">	
+	<div id="DisarmPanel" class="hidden">
+		<p>
+			<img id="imgDisarm" src="images/disarmed.PNG"/>				
+			<br/>
+			<span id="lblDisarm" class="statusLabel disarmLabel"> DISARMED </span>	
+		</p>
+		<br/><br/>			
+		<p>
+			<input id="btnArm" type="button" value="ARM" onclick="ArmIt(true)" data-theme="a" />
+		</p>
+	</div>
+
+	<div id="ArmPanel" class="hidden">
+		<p>
+			<img id="imgArm" src="images/armed.PNG"/>
+			<br/>		
+			<span id="lblArm" class="statusLabel armLabel"> ARMED </span>	
+		</p>	
+		<br/><br/>		
+		<p>
+			<input id="btnDisarm" type="button" value="DISARM" onclick="ArmIt(false)" data-theme="a"/>
+		</p>
+	</div>		
+	</div><!-- /content -->
+
+	<div data-role="footer" style="position: absolute; bottom: 0px;">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" class="ui-btn-active">Status</a></li>
+				<li><a href="javascript:redirect('history.html');">Events</a></li>
+				<li><a href="javascript:redirect('accountInfo.html');">My Account</a></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+
+</body>
+</html>
